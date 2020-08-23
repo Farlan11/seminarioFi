@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-size: 16px;
+}
+
+
+/****** HEADER ********/
+.header{
+	/*background:#1E296D;*/
+}
+.header h4{
+	/*background: #fff;*/
+	color: #1E296D;
+	text-align: center;
+	padding-top: 50px;
+
+}
+
+.header .texto{
+	/*para centrar el texto*/
+	 position:relative;
+    left:25%;
+	width: 50%;
+	/*background: #000;*/
+
+}
+.header h5{
+	color: #1E296D;
+	
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.header p{	
+	
+}
+
+/****** BARRA LATERAL*****/
+.aside{
+
+	position: fixed;
+	font-size: 14px;
+}
+.aside li{
+	text-align: center;
+}
+.aside li .active{
+	
+	color: #fff;
+	background: #1E296D;
+}
+.aside h1{
+	font-weight: 300;
+}
+.aside a{
+
+	color: #000;
+}
+.aside a:hover{
+	color: red;
+}
+
+/****************** MAIN ****************/
+
+.main{
+	 position:relative;
+    left:17%;
+	width: 70%;
+
+}
+.main img{
+	padding-left: 85px;
+	max-width: 80%;
+	padding-top: 30px;
+	padding-bottom: 10px;
+
+}
+
+.main .fuente{
+	padding-left: 80px; 
+	text-align: center;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.main .texto{
+	/*background: #fff;*/
+	
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+.main h4{
+	/*background: #fff;*/
+	color: #1E296D;
+	text-align: left;
+	padding-top: 50px;
+/*	padding-bottom: 10px;*/
+
+}
+
+/************ SECTION **************/
+.section .btn{
+	background: #1E296D;
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-weight: 300;
+}
+
+
+
+/************** FOOTER ************/
+
+
+.footer p{
+
+	margin-top: 30px;
+	
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 14px;
+}

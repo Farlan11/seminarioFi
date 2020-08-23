@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-size: 16px;
+}
+
+/********** NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES ****************/
+.fixed-top {
+  max-height: 100vh;
+  overflow: auto;
+}
+/*para cambiar enlaces del navbar*/
+/*.linea .container .collapse a{
+	font-size: 8px;
+	padding: 5px 0px;
+}
+*/
+/****** HEADER ********/
+.header {
+	padding-top: 56px;
+	overflow: hidden;
+}
+.header .encabezado{
+	width: 100%;
+}
+
+.contenedor{
+			margin-bottom: 20px;
+			
+			color: #000;
+		}
+.contenedor .unam{
+	width: 200px;
+}
+
+
+.contenedor div{
+			
+			padding: 20px;
+			border:1px solid rgba(255,255,255,.25);
+		}
+/****** BARRA LATERAL*****/
+.aside{
+
+	position: fixed;
+	font-size: 14px;
+}
+.aside li{
+	text-align: center;
+}
+.aside li .active{
+	
+	color: #fff;
+	background: #1E296D;
+}
+.aside h1{
+	font-weight: 300;
+}
+.aside a{
+
+	color: #000;
+}
+.aside a:hover{
+	color: red;
+}
+
+/***** MAIN ******/
+
+.main .btn{
+	background: #1E296D;
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-weight: 300;
+}
+
+.main h4{
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-weight: 400;
+	font-size: 50px;
+	padding: 10px;
+	color: #1E296D;
+}
+
+.footer h4{
+	margin-top: 80px;
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-weight: 400;
+	font-size: 50px;
+	padding: 10px;
+	color: #1E296D;
+}
+
+.footer p{
+	margin-bottom: 50px;
+}
+
+/********* MEDIAQUERIES *******/
+@media screen and (max-width:600px)
+{
+	/* NAVBAR */
+	.linea .container a{
+		font-size: 10px;
+	}
+	.linea .container .collapse a{
+	font-size: 10px;
+	padding: 5px 0px;
+	}
+
+	/**** FOOTER ******/
+
+	.footer .ubicacion{
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width:400px)
+{
+	/* MAIN */
+	.main h4{
+		font-size: 20px;
+	}
+	.main .card .card-title{
+		font-size: 15px;
+	}
+
+	.main .card .card-text{
+		font-size: 10px;
+	}
+	.main .card a{
+		font-size: 10px;
+	}
+
+	/* FOOTER ****/
+	.footer h4{
+		font-size: 20px;
+	}
+	.footer p{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width:300px)
+{
+
+	/*** HEADER ***/
+	.header {
+	padding-top: 86px;
+	}
+	.header p{
+		font-size: 10px;
+	}
+	
+	/* FOOTER ****/
+	.footer h4{
+		font-size: 10px;
+	}
+	.footer .correo{
+		font-size: 8px;
+	}
+	.footer p{
+		font-size: 10px;
+	}
+	.footer .ubicacion{
+		font-size: 8px;
+	}
+}

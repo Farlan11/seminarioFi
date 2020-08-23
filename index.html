@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<!-- importante pone metaviewport para distintos tamaños  -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Seminario Pedagogía en ingeniería</title>
+</head>
+<body>
+
+	<!-- NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES -->
+
+	<nav class="navbar linea d-sm-block d-lg-none navbar-light bg-light fixed-top" >
+		<!-- .container nos permite centrar el contenido de nuestro menu, esta clase es opcional y podemos encerrar el menu <nav> o incluir el contenedor dentro del <nav> -->
+		<div class="container" >
+			<!-- Nos sirve para agregar un logotipo al menu -->
+			<a href="#" class="navbar-brand">Menu</a>
+			
+			<!-- Nos permite usar el componente collapse para dispositivos moviles -->
+			<!-- en data-target poner id del menu -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Esta ya es la navbar -->
+			<div class="collapse navbar-collapse"  id="navbar"  >
+				<!-- Margen auto, pone la barra a la izquierda y buscar a la derecha -->
+				<ul class="navbar-nav mr-auto" >
+					<li class="nav-item " >
+						<!-- SPAN es para   -->
+						<a href="#" class="nav-link">Inicio <span class="sr-only">(Actual)</span></a>
+					</li>
+					
+					<li class="nav-item">
+						<a href="historia/index.html" class="nav-link">Historia</a>
+					</li>
+					<li class="nav-item">
+						<a href="equipo/index.html" class="nav-link">Equipo</a>
+					</li>
+					<li class="nav-item">
+						<a href="coloquio/index.html" class="nav-link ">Coloquio 2020</a>
+					</li>
+					<li class="nav-item">
+						<a href="psicoanalisis/index.html" class="nav-link">Psicoanálisis</a>
+					</li>
+					<li class="nav-item">
+						<a href="tercer/index.html" class="nav-link ">3er. Coloquio</a>
+					</li>
+					<li class="nav-item">
+						<a href="foro/index.html" class="nav-link">Foro </a>
+					</li>
+					<li class="nav-item">
+						<a href="tendencias/index.html" class="nav-link ">Tendencias e ideas</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- //////////////////////////////////////////////////// -->
+	<div class="container">
+		<div class="row">
+			<!-- d-none d-lg-block para que se deje de mostrar en un tamaño mediano -->
+			<div class="col-2 d-none d-lg-block">
+
+				<div class="div aside" >
+					<img src="img/logo.png" alt="">
+					<h4>Seminario <br>Pedagogía en <br>ingeniería</h4>
+					<hr>
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item ">
+							<!-- SPAN es para   -->
+							<a href="#" class="nav-link active">Inicio </a>
+						</li>					
+						<li class="nav-item">
+							<a href="historia/index.html" class="nav-link ">Historia</a>
+						</li>
+						<li class="nav-item">
+							<a href="equipo/index.html" class="nav-link">Equipo</a>
+						</li>
+						<li class="nav-item">
+							<a href="coloquio/index.html" class="nav-link ">Coloquio virtual junio <br> 2020</a>
+						</li>
+						<li class="nav-item">
+							<a href="psicoanalisis/index.html" class="nav-link">El Chiste en psicoanálisis</a>
+						</li>
+						<li class="nav-item">
+							<a href="tercer/index.html" class="nav-link ">3er. Coloquio Modelos de <br> intervención aúlica </a>
+						</li>
+						<li class="nav-item">
+							<a href="foro/index.html" class="nav-link">Foro El Futuro de la <br>enseñanza  de la ingeniería</a>
+						</li>
+						<li class="nav-item">
+							<a href="tendencias/index.html" class="nav-link ">Tendencias e ideas <br>actuales para modernizar<br> la educación superior </a>
+						</li>						
+					</ul>
+				</div>
+			</div>
+			<!-- d-none d-lg-block para que se deje de mostrar en un tamaño mediano -->
+			<div class="col-1 d-none d-lg-block"></div>
+			<!-- col-xs-12 col-lg-9 en un tamaño menor a lg se vuelve de 12 -->
+			<div class="col-xs-12 col-lg-9">
+				<div class="row header">
+						<!-- EN un tamaño menor a small deja de aparecer la imagen y aparece un div -->
+						<!-- <div class="col columna d-block d-sm-none">holi</div>	 -->	
+						<div class="col-12 ">
+							<img class="encabezado"	src="img/header.png" alt="">		
+						</div>
+						<div class="col-12">
+							<div class="contenedor d-flex justify-content-between">
+								<!-- en tamaño menor a lg desaparece la imagen -->
+								<div class="d-none d-md-block" > 
+									<img class="unam" src="img/unam.jpg" alt="">
+								</div>
+								<div class="d-flex flex-wrap align-content-center">
+									<p class="text-center" >
+									 El objetivo de este seminario es 
+									 aproximar los temas de la pedagogía 
+									 aplicada a la enseñanza de la 
+									 ingeniería a los académicos para que 
+									 puedan mejorar su labor en las aulas 
+									 de la Facultad de Ingeniería.
+									</p>
+								</div>
+								<div class="d-none d-md-block">
+									<img src="img/fi.jpg" alt="">
+								</div>
+							</div>
+						</div>
+							
+				</div>
+
+				<div class="main">
+					<h4 class="text-center">Actividades</h4>
+					<div class="row mt-3">
+						<!-- en un tamaño menor a largo abarca todo el espacio la tarjeta -->
+						<div class="col-lg-6 col-xs-12">
+							<div class="card">
+								<!-- para poner imagenes en la card se debe de poner antes o despues del CARD BODY -->
+								<!-- img-fluid es para que abarque el 100% de la card -->
+								<img src="img/1.jpg" class="card-img-top img-fluid" alt="">
+								<div class="card-body">
+									<h3 class="card-title">Coloquio virtual Experiencias de los docentes en los cursos de emergencia</h3>
+									<p class="card-text">Fue el foro para que los profesores intercambiaran experiencias en torno a la impartición de clases de emergencia por la pandemia.
+
+									23, 24 y 25 de junio de 2020 </p>
+									<a href="coloquio/index.html" class="btn btn-primary btn-lg btn-block">Coloquio vitual junio 2020 </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xs-12">
+							<div class="card">
+								<img src="img/2.jpg" class="card-img-top img-fluid" alt="">
+								<div class="card-body">
+									<h3 class="card-title">El chiste en psicoanálisis</h3>
+									<p class="card-subtitle text-muted mb-2">Subtitulo</p>
+									<p class="card-text">La Mtra. Margarita Puebla Cadena nos explica las connotaciones psicológicas del chiste y la comicidad para poder utilizarlos como un recurso de enseñanza. 
+
+									25 de febrero de 2020</p>
+									<a href="psicoanalisis/index.html" class="btn btn-primary btn-lg btn-block">El Chiste en psicoanálisis </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col-lg-6 col-xs-12">
+							<div class="card">
+								<!-- para poner imagenes en la card se debe de poner antes o despues del CARD BODY -->
+								<!-- img-fluid es para que abarque el 100% de la card -->
+								<img src="img/3.jpg" class="card-img-top img-fluid" alt="">
+								<div class="card-body">
+									<h3 class="card-title">3er. Coloquio Modelos de intervención aúlica</h3>
+									<p class="card-text">Fue el foro para que los profesores intercambiaran experiencias en torno a la impartición de clases de emergencia por la pandemia
+
+									20 al 24 de enero de 2020 </p>
+									<a href="tercer/index.html" class="btn btn-primary btn-lg btn-block">3er. Coloquio Modelos de intervención aúlica </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xs-12">
+							<div class="card">
+								<img src="img/4.jpg" class="card-img-top img-fluid" alt="">
+								<div class="card-body">
+									<h3 class="card-title">Foro: El futuro de la enseñanza de la ingeniería</h3>
+									<p class="card-subtitle text-muted mb-2">Subtitulo</p>
+									<p class="card-text">La Mtra. Margarita Puebla Cadena nos explica las connotaciones psicológicas del chiste y la comicidad para poder utilizarlos como un recurso de enseñanza. 
+
+									22 de enero de 2020</p>
+									<a href="foro/index.html" class="btn btn-primary btn-lg btn-block">Foro El Futuro de la enseñanza de la ingeniería </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col-lg-6 col-xs-12">
+							<div class="card">
+								<!-- para poner imagenes en la card se debe de poner antes o despues del CARD BODY -->
+								<!-- img-fluid es para que abarque el 100% de la card -->
+								<img src="img/5.jpg" class="card-img-top img-fluid" alt="">
+								<div class="card-body">
+									<h3 class="card-title">Tendencias e ideas actuales para modernizar la educación superior</h3>
+									<p class="card-text">El Ing. Rodolfo solís Ubaldo detona la discusión sobre si aún es posible actualizar el modelo tradicional de enseñanza o es necesario crear uno totalmente diferente.
+
+									30 de octubre de 2019</p>
+									<a href="tendencias/index.html" class="btn btn-primary btn-lg btn-block">Tendencias e ideas actuales para modernizar la educación superior </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xs-12">
+							<div class="card">
+								<img src="img/6.jpg" class="card-img-top img-fluid" alt="">
+								<div class="card-body">
+									<h3 class="card-title">2do. Coloquio Modelos de intervención aúlica</h3>
+									<p class="card-subtitle text-muted mb-2">Subtitulo</p>
+									<p class="card-text">Descripción de una iniciativa y por qué es importante 
+
+									17 al 21 de junio de 2019</p>
+									<a href="#" class="btn btn-primary btn-lg btn-block">liga</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer">
+					<div class="col-12">
+						<h4 class="text-center">Preguntas</h4>
+					</div>
+					<div class="col-12">
+						<p class="text-center correo ">Envía un correo electrónico a ingenieriapedagogia@gmail.com <br> para obtener más información sobre el proyecto</p>
+						<br>
+						<p>Las imágenes de estas páginas son tomadas de <a href="http://www.pexels.com">pexels.com</a>  y son de uso libre.</p>
+						<br>
+						<p class="ubicacion">ingenieriapedagogia@gmail.com   |   Facultad de Ingeniería, UNAM  |   Ciudad Universitaria, CDMX, México</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>	
+	</div>
+
+
+
+	<!-- deben ir en este orden -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

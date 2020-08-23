@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-size: 16px;
+}
+/************** HEADER ****************/
+.header img{
+	max-width: 100%;
+}
+/****** section ********/
+.section h4{
+	color: #1E296D;
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	margin-top: 50px;
+	margin-bottom: 	40px;
+}
+
+.section hr {
+  height: 2px;
+  background-color: black;
+}
+
+.section {
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-weight: 400;
+	
+}
+
+/**** MAIN ****/
+
+.main{
+	margin-top: 30px;
+}
+
+.main .chiste{
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.main .chiste .imagen{
+	 display: flex;
+        align-items: center;
+}
+/*para centrar la imagen */
+.main .chiste img{
+	margin: 0 auto;
+	max-width: 100%;
+}
+.main hr {
+  height: 2px;
+  background-color: black;
+}
+/****** BARRA LATERAL*****/
+.aside{
+
+	position: fixed;
+	font-size: 14px;
+}
+.aside li{
+	text-align: center;
+}
+.aside li .active{
+	
+	color: #fff;
+	background: #1E296D;
+}
+.aside h1{
+	font-weight: 300;
+}
+.aside a{
+
+	color: #000;
+}
+.aside a:hover{
+	color: red;
+}
+
+/******* FOOTER ******/
+
+.footer{
+	margin: 20px 0;
+}
+.footer .chiste{
+	margin: 20px 0;
+}

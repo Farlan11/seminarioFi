@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-size: 16px;
+}
+
+
+/****** HEADER ********/
+.div{
+	color: #1E296D;
+	font-family: "Open Sans", Arial, Sans-serif;
+	font-weight: 300;
+	margin-top: 50px;
+}
+
+.div img{
+	margin-top: 50px;
+	width: 60%;
+}
+
+/****** MAIN *****/
+
+.main .fotos{
+	margin-top: 80px;
+}
+
+.main .fotos img{
+	
+}
+/****** BARRA LATERAL*****/
+.aside{
+
+	position: fixed;
+	font-size: 14px;
+}
+.aside li{
+	text-align: center;
+}
+.aside li .active{
+	
+	color: #fff;
+	background: #1E296D;
+}
+.aside h1{
+	font-weight: 300;
+}
+.aside a{
+
+	color: #000;
+}
+.aside a:hover{
+	color: red;
+}
+
+/******* FOOTER ***/
+
+.footer{
+	padding: 50px;
+	background: #A8BEDC;
+	margin-bottom: 30px;
+}
