@@ -8,7 +8,17 @@ body{
 	font-family: "Open Sans", Arial, Sans-serif;
 	font-size: 16px;
 }
-
+/********** NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES ****************/
+.fixed-top {
+  max-height: 100vh;
+  overflow: auto;
+}
+/*para cambiar enlaces del navbar*/
+/*.linea .container .collapse a{
+	font-size: 8px;
+	padding: 5px 0px;
+}
+*/
 
 /****** HEADER ********/
 .header{
@@ -72,14 +82,12 @@ body{
 	 position:relative;
     left:17%;
 	width: 70%;
-
 }
 .main img{
 	padding-left: 85px;
 	max-width: 80%;
 	padding-top: 30px;
 	padding-bottom: 10px;
-
 }
 
 .main .fuente{
@@ -115,15 +123,147 @@ body{
 }
 
 
-
 /************** FOOTER ************/
 
-
 .footer p{
-
 	margin-top: 30px;
-	
 	text-align: center;
 	margin-bottom: 30px;
 	font-size: 14px;
+}
+
+/********* MEDIAQUERIES *******/
+@media screen and (max-width:600px)
+{
+	/* NAVBAR */
+	.linea .container a{
+		font-size: 10px;
+	}
+	.linea .container .collapse a{
+	font-size: 10px;
+	padding: 5px 0px;
+	}
+	/********** HEADER *********/
+	.header .texto p{
+		font-size: 10px;
+	}
+
+	/******** MAIN **********/
+	.main .fuente{
+		font-size: 8px;
+	}
+	.main h4{
+		font-size: 20px;
+	}
+	.main  p{
+		font-size: 10px;
+	}
+
+	/********** SECTION **********/
+	.section p{
+		font-size: 10px;
+	}
+	.section a{
+		 font-size:10px;
+	}
+	/**** FOOTER ******/
+
+	.footer .ubicacion p{
+		font-size: 7px;
+	}
+}
+
+@media screen and (max-width:400px)
+{
+	/********** HEADER *********/
+	.header h4{
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	.header h5{
+		font-size: 15px;
+	}
+	/******** MAIN **********/
+	/*para hacer mas ancha la imagen*/
+	.main
+	{
+	width: 90%;
+	}
+	.main img{
+		max-width: 100%;	
+	}
+	.main .fuente{
+		font-size: 7px;
+	}
+
+}
+
+@media screen and (max-width:300px)
+{
+
+	/********** HEADER *********/
+
+	.header h4{
+		font-size: 10px;
+		margin-top: 15px;
+	}
+	.header h5{
+		font-size: 10px;
+		text-align: center;
+		color: #1E296D;	
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	/*para hacer mas ancho el espacio donde se pone el texto*/
+	.header .texto{
+	/*para centrar el texto*/
+	 position:relative;
+    left:0%;
+	width: 100%;
+	}
+
+	.header .texto p{
+		font-size: 8px;
+	}
+	/******** MAIN **********/
+	/*para hacer mas ancha la imagen*/
+	.main{
+		position:static;
+	    left:0%;
+		width: 100%;
+	}
+	.main img{
+		padding-left: 35px;
+		max-width: 100%;
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}	
+	.main .fuente{
+		padding-left:35px; 
+		text-align: center;
+		font-weight: 300;
+		font-size: 6px;
+	}
+	.main h4{
+		padding-top: 10px;
+		margin-top: 0px;
+		padding-left:35px;
+		font-size: 10px;
+	}
+	.main p{
+		padding-left:35px;
+		font-size: 8px;	
+	}
+
+	/************** SECTION /**********/
+	.section p,
+	.section a{
+		font-size: 8px;
+	}
+
+	/******** FOOTER ******/
+	.footer .ubicacion p{
+		font-size: 6px;
+	}
 }

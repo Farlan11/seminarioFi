@@ -3,17 +3,65 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- importante pone metaviewport para distintos tamaños  -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilos.css">
 	<title>Seminario Pedagogía en ingeniería</title>
 </head>
 <body>
-	
+	<!-- NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES -->
+
+	<nav class="navbar linea d-sm-block d-lg-none navbar-light bg-light fixed-top" >
+		<!-- .container nos permite centrar el contenido de nuestro menu, esta clase es opcional y podemos encerrar el menu <nav> o incluir el contenedor dentro del <nav> -->
+		<div class="container" >
+			<!-- Nos sirve para agregar un logotipo al menu -->
+			<a href="#" class="navbar-brand">Menu</a>
+			
+			<!-- Nos permite usar el componente collapse para dispositivos moviles -->
+			<!-- en data-target poner id del menu -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Esta ya es la navbar -->
+			<div class="collapse navbar-collapse"  id="navbar"  >
+				<!-- Margen auto, pone la barra a la izquierda y buscar a la derecha -->
+				<ul class="navbar-nav mr-auto" >
+					<li class="nav-item " >
+						<!-- SPAN es para   -->
+						<a href="../index.html" class="nav-link">Inicio <span class="sr-only">(Actual)</span></a>
+					</li>
+					
+					<li class="nav-item">
+						<a href="../historia/index.html" class="nav-link">Historia</a>
+					</li>
+					<li class="nav-item">
+						<a href="../equipo/index.html" class="nav-link">Equipo</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link ">Coloquio 2020</a>
+					</li>
+					<li class="nav-item">
+						<a href="../psicoanalisis/index.html" class="nav-link">Psicoanálisis</a>
+					</li>
+					<li class="nav-item">
+						<a href="../tercer/index.html" class="nav-link ">3er. Coloquio</a>
+					</li>
+					<li class="nav-item">
+						<a href="../foro/index.html" class="nav-link">Foro </a>
+					</li>
+					<li class="nav-item">
+						<a href="../tendencias/index.html" class="nav-link ">Tendencias e ideas</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<div class="container">
 		<div class="row">
-			<div class="col-2"><div class=" aside">
+			<!-- d-none d-lg-block para que se deje de mostrar en un tamaño mediano -->
+			<div class="col-2 d-none d-lg-block">
+				<div class=" aside">
 
 					<img src="img/logo.png" alt="">
 					<h4>Seminario <br>Pedagogía en <br>ingeniería</h4>
@@ -33,7 +81,7 @@
 							<a href="#" class="nav-link active ">Coloquio virtual junio <br> 2020</a>
 						</li>
 						<li class="nav-item">
-							<a href="../psicoanalisis/index.html" class="nav-link">El Chiste en psicoanálisis</a>
+							<a href="../psicoanalisis/index.html" class="nav-link ">El Chiste en psicoanálisis</a>
 						</li>
 						<li class="nav-item">
 							<a href="../tercer/index.html" class="nav-link ">3er. Coloquio Modelos de <br> intervención aúlica </a>
@@ -46,50 +94,45 @@
 						</li>						
 					</ul>
 				</div></div>
-			<div class="col-10">
+			<!-- d-none d-lg-block para que se deje de mostrar en un tamaño mediano -->
+			<div class="col-1 d-none d-lg-block"></div>
+			<!-- col-xs-12 col-lg-9 en un tamaño menor a lg se vuelve de 12 -->
+			<div class="col-xs-12 col-lg-9">
 
 			<!-- HEADER -->
-				<div class="row">
-					<div class="col-2">				
-					</div>
-					<div class="col-1"></div>
-					<div class="col-9 d-flex justify-content-center">
-						<div class="div">	
+				<div class="header">
+					<div class="row">
+						<div class=" col-12">	
 							<img src="img/header.png" alt="">
-						</div>			
+						</div>
 					</div>
+					<hr>
 				</div>
-				<div class="row">
-					<div class="col-2">				
-					</div>
-					<div class="col-1"></div>
-					<div class="col-9 d-flex justify-content-center">
-						<div class="div">	
+					
+			<!-- SECTION 1-->
+				<div class="section1">
+					<div class="row">
+						<div class="seccion col-12">	
 							<p>	La pandemia del covid-19 interrumpió las clases presenciales a partir del 16 de marzo de 2020. A partir de ese momento, los profesores de la Facultad de Ingeniería de la UNAM tuvieron que crear, a veces improvisar, formas de realizar sus clases a distancia evitando la pérdida del semestre. </p>
 							<p>	Este coloquio tuvo como objetivo que un grupo de profesores compartieran sus experiencias obtenidas durante este proceso y apoyar de esta manera a otros profesores a mejorar sus esquemas en esta nueva situación que todo hace pensar será la nueva normalidad.</p>
 							<p>	El Coloquio constó de tres sesiones, los días 23, 24 y 25 de junio de 2020. </p>
-						</div>			
+						</div>
 					</div>
 				</div>
-
-				<div class="main">	
+				
+			<!-- MAIN -->
+				<div class="main">
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex flex-column">								
 								<div><img src="img/1.jpg" alt=""></div>
 								<div><img src="img/2.jpg" alt=""></div>
 								<div><img src="img/3.jpg" alt=""></div>
 							</div>
-						</div>
+						</div>	
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 d-flex justify-content-center ">
+						<div class="col-12 d-flex justify-content-center">	
 							<div class="lista">
 								<p>23 de junio de 2020</p>
 								<ul>
@@ -126,114 +169,91 @@
 									<li>Yahvé Abdul Ledezma Rubio</li>
 								</ul>
 							</div>
-						</div>
-					</div>
+						</div>	
+					</div>					
 				</div>
-				<div class="section">	
+
+			<!-- SECTION 2-->
+				<div class="section">
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<h3 class="titulo text-center">23 de junio de 2020</h3>
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Luis Javier Acosta Bernal</p>
 									<iframe class="pdf" src="https://drive.google.com/file/d/1Ij8nPOJ75qnAGfdGqlds8BnpLqE5o8kI/preview" width="640" height="480"></iframe>
 								</div>
-								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>José Alberto Ramírea Aguilar</p>
-									<iframe src="https://drive.google.com/file/d/1P8Hqe2vwBtHferrfVRDej39HfSf0Iinv/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1P8Hqe2vwBtHferrfVRDej39HfSf0Iinv/preview" width="640" height="480"></iframe>
 								</div>
 								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Elizabeth Fonseca Chávez</p>
-									<iframe src="https://drive.google.com/file/d/1L9nrCVlTy1s2YjV9RlB23nwMWHFJk1V-/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1L9nrCVlTy1s2YjV9RlB23nwMWHFJk1V-/preview" width="640" height="480"></iframe>
 								</div>
 								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Antonio Sánchez Pérez</p>
-									<iframe src="https://drive.google.com/file/d/1q5ku4_FFfi7W8AWuFGwoWvxgvSqNh6zI/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1q5ku4_FFfi7W8AWuFGwoWvxgvSqNh6zI/preview" width="640" height="480"></iframe>
 								</div>
 								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Maricarmen Navarrete Sevilla</p>
-									<iframe src="https://drive.google.com/file/d/1q5ku4_FFfi7W8AWuFGwoWvxgvSqNh6zI/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1q5ku4_FFfi7W8AWuFGwoWvxgvSqNh6zI/preview" width="640" height="480"></iframe>
 								</div>
 								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Amanda Lolita Pineda Norman</p>
-									<iframe src="https://drive.google.com/file/d/1lggYaK2OF60GvEN-elwyTXh2ydu9qV1u/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1lggYaK2OF60GvEN-elwyTXh2ydu9qV1u/preview" width="640" height="480"></iframe>
 								</div>
 								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Alejandra Vargas Espinoza de los Monteros</p>
-									<iframe src="https://drive.google.com/file/d/1lggYaK2OF60GvEN-elwyTXh2ydu9qV1u/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1lggYaK2OF60GvEN-elwyTXh2ydu9qV1u/preview" width="640" height="480"></iframe>
 								</div>
 								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<h3 class="titulo text-center">24 de junio de 2020</h3>
 							<div class="fotos d-flex justify-content-between">
 								<div >
@@ -245,271 +265,213 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Alejandro Rodríguez Valdés</p>
-									<iframe src="https://drive.google.com/file/d/1lggYaK2OF60GvEN-elwyTXh2ydu9qV1u/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1lggYaK2OF60GvEN-elwyTXh2ydu9qV1u/preview" width="640" height="480"></iframe>
 								</div>
 								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>María Jaquelina López Barrientos</p>
-									<iframe src="https://drive.google.com/file/d/1GU1Ez9uuCJsh9ayniMHsZU-kSG-AdFoA/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1GU1Ez9uuCJsh9ayniMHsZU-kSG-AdFoA/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Luis Yair Bautista Blanco</p>
-									<iframe src="https://drive.google.com/file/d/1WDDWN_6VK92CEk2Xya_1Xisd6ZqgzXpT/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1WDDWN_6VK92CEk2Xya_1Xisd6ZqgzXpT/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Yoloxóchitl Morales Martínez</p>
-									<iframe src="https://drive.google.com/file/d/1nnQ6puq3XBGYgs8Q9FkUgxL4Nw8nYEpx/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1nnQ6puq3XBGYgs8Q9FkUgxL4Nw8nYEpx/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Yoloxóchitl Morales Martínez</p>
-									<iframe src="https://drive.google.com/file/d/1nnQ6puq3XBGYgs8Q9FkUgxL4Nw8nYEpx/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1nnQ6puq3XBGYgs8Q9FkUgxL4Nw8nYEpx/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Teheny Carolina Ruiz Primo</p>
-									<iframe src="https://drive.google.com/file/d/1nnQ6puq3XBGYgs8Q9FkUgxL4Nw8nYEpx/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1nnQ6puq3XBGYgs8Q9FkUgxL4Nw8nYEpx/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Nikte Norma Ocampo Guerrero</p>
-									<iframe src="https://drive.google.com/file/d/1Oc5Wkej0uSLSrVR6ZBJAerI77ssEDj1Z/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1Oc5Wkej0uSLSrVR6ZBJAerI77ssEDj1Z/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Evelyn Salazar Guerrero</p>
-									<iframe src="https://drive.google.com/file/d/14wtxbBz9OQkRJNtMfE7wNSj2a0ppPmcW/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/14wtxbBz9OQkRJNtMfE7wNSj2a0ppPmcW/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Alfonso Salazar Guerrero</p>
-									<iframe src="https://drive.google.com/file/d/1Xp6YvB6zBKr1qkNQG3CfjVvxOL1Xv9jh/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1Xp6YvB6zBKr1qkNQG3CfjVvxOL1Xv9jh/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Rodolfo Solís Ubaldo</p>
-									<iframe src="https://drive.google.com/file/d/1bIc8Uso9ods6RF-Lxuj2Rp8ot_P_Z9Xu/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1bIc8Uso9ods6RF-Lxuj2Rp8ot_P_Z9Xu/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<h3 class="titulo text-center">25 de junio de 2020</h3>
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Eduardo Espinosa Ávila</p>
-									<iframe src="https://drive.google.com/file/d/1QmIIG7ICv3f2nSzATMCic6tTh3vM1mHa/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1QmIIG7ICv3f2nSzATMCic6tTh3vM1mHa/preview" width="640" height="480"></iframe>
 								</div>
 								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Guadalupe Durán Rojas</p>
-									<iframe src="https://drive.google.com/file/d/1WQf6TxPBedGwdLI4MWqz8jmJHlKLDRrH/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1WQf6TxPBedGwdLI4MWqz8jmJHlKLDRrH/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Pablo Juárez Montoya</p>
-									<iframe src="https://drive.google.com/file/d/1QIx4YcvFluq8srzHTEg9DnQ1YDmsJRbk/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1QIx4YcvFluq8srzHTEg9DnQ1YDmsJRbk/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Juan Velázquez Torres</p>
-									<iframe src="https://drive.google.com/file/d/1O_P3K3LBoRWm_L19RxYirPnK0-nUChwf/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1O_P3K3LBoRWm_L19RxYirPnK0-nUChwf/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Rafael Viñas Rodríguez</p>
-									<iframe src="https://drive.google.com/file/d/1MzJKRqETQU3gszlrKkx7vI37RMeqJKvW/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1MzJKRqETQU3gszlrKkx7vI37RMeqJKvW/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Bruno Armando López Jiménez</p>
-									<iframe src="https://drive.google.com/file/d/1DRkqDou14QLT9RJFsXYCB4HMtFgyagOv/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1DRkqDou14QLT9RJFsXYCB4HMtFgyagOv/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Salvador Centeno Estrada</p>
-									<iframe src="https://drive.google.com/file/d/1EdXy28xz2c6jG3Pw__0-MmOjt3Q3gsMh/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1EdXy28xz2c6jG3Pw__0-MmOjt3Q3gsMh/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Mario Alfredo Ibarra Carrillo</p>
-									<iframe src="https://drive.google.com/file/d/1H762z5hoJMmJQYdfS3Gy0kHA62G_Rmwo/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1H762z5hoJMmJQYdfS3Gy0kHA62G_Rmwo/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">	
 							<div class="fotos d-flex justify-content-between">
 								<div >
 									<p>Yahvé Abdul Ledezma Rubio</p>
-									<iframe src="https://drive.google.com/file/d/1Z5JQNDlgKiCJQR3H6kaqBULzEwDDdNAv/preview" width="640" height="480"></iframe>
+									<iframe class="pdf" src="https://drive.google.com/file/d/1Z5JQNDlgKiCJQR3H6kaqBULzEwDDdNAv/preview" width="640" height="480"></iframe>
 								</div>								
 							</div>
 						</div>
 					</div>
-				</div>
+
+			<!-- FOOTER -->
 				<div class="footer">
 					<div class="row">
-						<div class="col-2">				
-						</div>
-						<div class="col-1"></div>
-						<div class="col-9 ">
+						<div class="col-12">
 							<div class="ubicacion">
-								<p class="text-center">ingenieriapedagogia@gmail.com   |   Facultad de Ingeniería, UNAM  |   Ciudad Universitaria, CDMX, México</p>
+								<p >ingenieriapedagogia@gmail.com   |   Facultad de Ingeniería, UNAM  |   Ciudad Universitaria, CDMX, México</p>
 							</div>
 						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>	
-	</div>	
+	</div>		
 
 	<!-- deben ir en este orden -->
 	<script src="../js/jquery-3.5.1.min.js"></script>

@@ -8,7 +8,11 @@ body{
 	font-family: "Open Sans", Arial, Sans-serif;
 	font-size: 16px;
 }
-
+/********** NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES ****************/
+.fixed-top {
+  max-height: 100vh;
+  overflow: auto;
+}
 /************** HEADER ****************/
 .header img{
 	max-width: 100%;
@@ -92,11 +96,33 @@ body{
 .footer{
 	margin: 20px 0;
 }
-.footer .imagen img{
-	max-width: 50%;
+
+
+/********* MEDIAQUERIES *******/
+@media screen and (max-width:600px)
+{
+	/* NAVBAR */
+	.linea .container a{
+		font-size: 10px;
+	}
+	.linea .container .collapse a{
+	font-size: 10px;
+	padding: 5px 0px;
+	}
+	/******* HEADER ******/
+	.header{
+		margin-top: 50px;
+	}
+	/******** FOOTER *****/
+	.footer p{
+		font-size: 10px;
+	}
 }
 
-.footer .row{
-	margin-top: 10px;
-	margin-bottom: 40px;
+@media screen and (max-width:600px)
+{
+	/******** FOOTER *****/
+	.footer p{
+		font-size: 8px;
+	}
 }

@@ -3,17 +3,65 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- importante pone metaviewport para distintos tamaños  -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilos.css">
 	<title>Seminario Pedagogía en ingeniería</title>
 </head>
 <body>
-	
+	<!-- NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES -->
+
+	<nav class="navbar linea d-sm-block d-lg-none navbar-light bg-light fixed-top" >
+		<!-- .container nos permite centrar el contenido de nuestro menu, esta clase es opcional y podemos encerrar el menu <nav> o incluir el contenedor dentro del <nav> -->
+		<div class="container" >
+			<!-- Nos sirve para agregar un logotipo al menu -->
+			<a href="#" class="navbar-brand">Menu</a>
+			
+			<!-- Nos permite usar el componente collapse para dispositivos moviles -->
+			<!-- en data-target poner id del menu -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Esta ya es la navbar -->
+			<div class="collapse navbar-collapse"  id="navbar"  >
+				<!-- Margen auto, pone la barra a la izquierda y buscar a la derecha -->
+				<ul class="navbar-nav mr-auto" >
+					<li class="nav-item " >
+						<!-- SPAN es para   -->
+						<a href="../index.html" class="nav-link">Inicio <span class="sr-only">(Actual)</span></a>
+					</li>
+					
+					<li class="nav-item">
+						<a href="../historia/index.html" class="nav-link">Historia</a>
+					</li>
+					<li class="nav-item">
+						<a href="../equipo/index.html" class="nav-link">Equipo</a>
+					</li>
+					<li class="nav-item">
+						<a href="../coloquio/index.html" class="nav-link ">Coloquio 2020</a>
+					</li>
+					<li class="nav-item">
+						<a href="../psicoanalisis/index.html" class="nav-link">Psicoanálisis</a>
+					</li>
+					<li class="nav-item">
+						<a href="../tercer/index.html" class="nav-link ">3er. Coloquio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Foro </a>
+					</li>
+					<li class="nav-item">
+						<a href="../tendencias/index.html" class="nav-link ">Tendencias e ideas</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<div class="container">
 		<div class="row">
-			<div class="col-2"><div class=" aside">
+			<!-- d-none d-lg-block para que se deje de mostrar en un tamaño mediano -->
+			<div class="col-2 d-none d-lg-block">
+				<div class=" aside">
 
 					<img src="img/logo.png" alt="">
 					<h4>Seminario <br>Pedagogía en <br>ingeniería</h4>
@@ -46,8 +94,10 @@
 						</li>						
 					</ul>
 				</div></div>
-			<div class="col-1"></div>
-			<div class="col-9">
+			<!-- d-none d-lg-block para que se deje de mostrar en un tamaño mediano -->
+			<div class="col-1 d-none d-lg-block"></div>
+			<!-- col-xs-12 col-lg-9 en un tamaño menor a lg se vuelve de 12 -->
+			<div class="col-xs-12 col-lg-9">
 
 			<!-- HEADER -->
 				<div class="header">

@@ -8,7 +8,11 @@ body{
 	font-family: "Open Sans", Arial, Sans-serif;
 	font-size: 16px;
 }
-
+/********** NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES ****************/
+.fixed-top {
+  max-height: 100vh;
+  overflow: auto;
+}
 /************** HEADER ****************/
 .header img{
 	max-width: 100%;
@@ -99,4 +103,99 @@ body{
 .footer .row{
 	margin-top: 10px;
 	margin-bottom: 40px;
+}
+
+/********* MEDIAQUERIES *******/
+@media screen and (max-width:600px)
+{
+	/* NAVBAR */
+	.linea .container a{
+		font-size: 10px;
+	}
+	.linea .container .collapse a{
+	font-size: 10px;
+	padding: 5px 0px;
+	}
+
+	/********* SECTION ********/
+	.section h2,
+	.section p{
+		font-size: 15px;
+	}
+	/********* MAIN ********/
+	.main h2,
+	.main p{
+		font-size: 15px;
+	}
+	.main .texto{
+		padding: 10px 50px;
+	}
+	.main .texto p
+	{
+		font-size: 10px;
+	}
+
+
+
+	.footer p{
+		font-size: 10px;
+	}
+}
+
+
+@media screen and (max-width:400px){
+
+	/******* HEADER *********/
+	.header{
+		margin-top: 60px;
+	}
+	/********* SECTION ********/
+	.section h2,
+	.section p{
+		font-size: 10px;
+	}
+	/********* MAIN ********/
+	.main h2,
+	.main p{
+		font-size: 10px;
+	}
+	
+
+	.main .video{
+		max-width: 100%;
+	}
+	/***** FOOTER ******/
+	.footer .imagen img{
+		max-width: 100%;
+	}
+	.footer p{
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width:400px){
+	/********* SECTION ********/
+	.section h2,
+	.section p{
+		font-size: 8px;
+	}
+	/********* MAIN ********/
+	.main h2,
+	.main p{
+		font-size: 8px;
+	}
+	.main .texto{
+		padding: 10px 30px;
+	}
+	.main .texto p
+	{
+		font-size: 8px;
+	}
+	.main .tarjeta{
+		margin-top: 10px;
+	}
+	/******** FOOTER ******/
+	.footer .row{
+		margin-bottom: 10px;
+	}
 }

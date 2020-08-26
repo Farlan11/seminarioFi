@@ -9,16 +9,30 @@ body{
 	font-size: 16px;
 }
 
+/********** NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES ****************/
+.fixed-top {
+  max-height: 100vh;
+  overflow: auto;
+}
 
 /****** HEADER ********/
-.div{
+.header h2{
 	color: #1E296D;
 	font-family: "Open Sans", Arial, Sans-serif;
 	font-weight: 300;
 	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
-.div img{
+
+/************ SECTION **************/
+.section h3{
+	color: #1E296D;
+	font-family: "Open Sans", Arial, Sans-serif;
+	margin-bottom: 50px;
+}
+
+.section img{
 	margin-top: 50px;
 	width: 60%;
 }
@@ -63,4 +77,129 @@ body{
 	padding: 50px;
 	background: #A8BEDC;
 	margin-bottom: 30px;
+}
+
+
+/********* MEDIAQUERIES *******/
+@media screen and (max-width:600px)
+{
+	/* NAVBAR */
+	.linea .container a{
+		font-size: 10px;
+	}
+	.linea .container .collapse a{
+	font-size: 10px;
+	padding: 5px 0px;
+	}
+
+	/**** HEADER ******/
+
+	.header h2
+	{
+		font-size: 20px;
+		text-align: center;
+		margin-top: 70px;
+	}
+	/************ SECTION **************/
+	.section h3{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.section p{
+		font-size: 10px;
+	}
+
+	.section img{
+		margin-top: 10px;
+		width: 40%;
+	}
+	/****** MAIN *****/
+
+	.main .fotos{
+		margin-top: 50px;
+	}
+	.main p{
+		font-size: 10px;
+	}
+	/*para centrar fotos en su div*/
+	.main .imagen-centro{
+		display: flex;
+        align-items: center;
+	}
+	.main .fotos img{
+		width: 50%;
+		margin: 0 auto; /* requerido para alineación horizontal */
+	}
+	
+	/*** FOOTER *********/
+	.footer h3{
+		font-size: 15px;
+	}
+	.footer p,
+	.footer a{
+		font-size: 10px;
+	}
+
+	.footer .ubicacion p{
+		font-size: 6px;
+	}
+}
+
+@media screen and (max-width:400px)
+{
+	/**** HEADER ******/
+
+	.header h2
+	{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	/************ SECTION **************/
+	.section h3{
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.footer{
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width:300px)
+{
+	/**** HEADER ******/
+
+	.header h2
+	{
+		font-size: 10px;
+	}
+	/************ SECTION **************/
+	.section h3{
+		font-size: 10px;
+	}
+	.section p{
+		font-size: 8px;
+	}
+
+	.section img{
+		width: 60%;
+	}
+	/****** MAIN *****/
+	.main .fotos{
+		margin-top: 20px;
+	}
+	.main p{
+		font-size: 8px;
+	}
+	/*** FOOTER *********/
+	.footer h3{
+		font-size: 10px;
+	}
+	.footer p,
+	.footer a{
+		font-size: 8px;
+	}
+
+	.footer .ubicacion p{
+		font-size: 6px;
+	}
 }

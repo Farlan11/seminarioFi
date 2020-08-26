@@ -3,17 +3,65 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- importante pone metaviewport para distintos tamaños  -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilos.css">
 	<title>Seminario Pedagogía en ingeniería</title>
 </head>
 <body>
-	
+	<!-- NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES -->
+
+	<nav class="navbar linea d-sm-block d-lg-none navbar-light bg-light fixed-top" >
+		<!-- .container nos permite centrar el contenido de nuestro menu, esta clase es opcional y podemos encerrar el menu <nav> o incluir el contenedor dentro del <nav> -->
+		<div class="container" >
+			<!-- Nos sirve para agregar un logotipo al menu -->
+			<a href="#" class="navbar-brand">Menu</a>
+			
+			<!-- Nos permite usar el componente collapse para dispositivos moviles -->
+			<!-- en data-target poner id del menu -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Esta ya es la navbar -->
+			<div class="collapse navbar-collapse"  id="navbar"  >
+				<!-- Margen auto, pone la barra a la izquierda y buscar a la derecha -->
+				<ul class="navbar-nav mr-auto" >
+					<li class="nav-item " >
+						<!-- SPAN es para   -->
+						<a href="../index.html" class="nav-link">Inicio <span class="sr-only">(Actual)</span></a>
+					</li>
+					
+					<li class="nav-item">
+						<a href="../historia/index.html" class="nav-link">Historia</a>
+					</li>
+					<li class="nav-item">
+						<a href="../equipo/index.html" class="nav-link">Equipo</a>
+					</li>
+					<li class="nav-item">
+						<a href="../coloquio/index.html" class="nav-link ">Coloquio 2020</a>
+					</li>
+					<li class="nav-item">
+						<a href="../psicoanalisis/index.html" class="nav-link">Psicoanálisis</a>
+					</li>
+					<li class="nav-item">
+						<a href="../tercer/index.html" class="nav-link ">3er. Coloquio</a>
+					</li>
+					<li class="nav-item">
+						<a href="../foro/index.html" class="nav-link">Foro </a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link ">Tendencias e ideas</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<div class="container">
 		<div class="row">
-			<div class="col-2"><div class=" aside">
+			<!-- d-none d-lg-block para que se deje de mostrar en un tamaño mediano -->
+			<div class="col-2 d-none d-lg-block">
+				<div class=" aside">
 
 					<img src="img/logo.png" alt="">
 					<h4>Seminario <br>Pedagogía en <br>ingeniería</h4>
@@ -46,8 +94,10 @@
 						</li>						
 					</ul>
 				</div></div>
-			<div class="col-1"></div>
-			<div class="col-9">
+			<!-- d-none d-lg-block para que se deje de mostrar en un tamaño mediano -->
+			<div class="col-1 d-none d-lg-block"></div>
+			<!-- col-xs-12 col-lg-9 en un tamaño menor a lg se vuelve de 12 -->
+			<div class="col-xs-12 col-lg-9">
 
 			<!-- HEADER -->
 				<div class="header">
@@ -83,97 +133,106 @@
 					</div>
 
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/1.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p>Aproximadamente en el año 2006 se comenzó la instalación de pizarrones electrónicos en los salones de la División de Ciencias Básicas. Ahí le surgió la interrogante es ¿si realmente se mejora el aprendizaje, si los alumnos aprenden más y mejor con el uso de estas tecnologías? La inquietud radica en que si en la forma en que se utilizan estas tecnologías mejoran el aprendizaje.</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/2.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">
 							<p>Estas aseveraciones son producto de un estudio, eminentemente estadístico, arroja algunas conclusiones sobre los beneficios del uso de las TIC. </p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/3.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p>Se plantea el invariante uso de las TIC en la educación. </p>
 							<p>Como parte de su investigación consultó con IES para consultarles si disponían estudios que compararan los resultados educativos antes y después de la aplicación de la TIC para poder comprobar su efectividad; mejora en indicadores tales como índices de aprobación o calificaciones promedio que pudieran dar una idea de la incidencia del uso de las TIC.</p>
 							<p>Por varios factores, principalmente económicos, de administración o mantenimiento; las TIC no deben usarse sólo porque existen, se debería estar al tanto de la mejora en la educación por uso.</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">	
 							<div class="imagen">
 								<img src="img/4.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p>Las TIC inciden en estos dos aspectos. El modelo actual consiste en la clase discursiva, de clases cerradas, con horarios establecidos vigente desde tiempo inmemorial en todo el mundo.</p>
 							<p>El nuevo modelo se basa en las TIC y es totalmente diferente porque no es factible aplicar estas tecnologías en la aplicación del modelo actual.</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">	
 							<div class="imagen">
 								<img src="img/5.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p>El objetivo de esta plática no es llegar a una conclusión, sino de intercambiar opiniones e ideas sobre estas inquietudes en manos de los académicos y de los alumnos para llegar al mejor resultado.</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">	
 							<div class="imagen">
 								<img src="img/6.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p>En la literatura del tema no es clara la manera en que se fundamentan estas opiniones positivas, se percibe que son ciertas, pero no es fácil comprobarlo.</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/7.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">		
 							<p>De la misma forma, estas virtudes se perciben verdaderas; basta con considerar el acceso a una cantidad infinita de información a través de las redes.</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/8.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p>Este punto de vista contrasta las expectativas sobre los éxitos educativos obtenidos a partir de la aplicación de las TIC</p>
 							<p>El segundo aspecto es muy importante, ya que se discute el hecho de que gran parte de la información disponible es basura, y le corresponde al sistema educativo formar al estudiante para que discierna entre la información válida y la que no lo es. Asimismo, las TIC son un distractor muy poderoso.</p>
 							<p>Se puede hacer un contraste entre las capacidades de discernimiento y análisis que se desarrollaban con el uso de reglas de cálculo a las que se logran en la actualidad con el uso de las TIC.</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/9.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">		
 							<p>Se debe buscar la manera de formar paralelamente al alumno en aquellos aspectos que las TIC no pueden hacerlo (criterio, discernimiento, análisis, entre otros).</p>
 							<p>En la década de los 70 del siglo pasado se decidió introducir a la UNAM la teoría pedagógica; se empezó a hablar de los objetivos y los estilos de aprendizaje entre otros conceptos que en aquel momento no se consideraron relevantes.</p>
 							<p>Sin embargo, con el uso de las TIC las consideraciones de estos conceptos son imprescindibles.</p>
@@ -181,63 +240,70 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/10.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">		
 							<p>A partir de diversas experiencias, es indispensable establecer las respuestas a estas consideraciones.</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/11.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">
 							<p>Esta aseveración se comprueba en el desarrollo de la educación a distancia, que no tiene éxito en la totalidad de los estudiantes, sólo funciona en aquellos que tienen la capacidad de autoaprendizaje.</p>
 							<p>Por otra parte, hay una brecha tecnológica enorme con las nuevas generaciones y el reto está en aprovechar su experiencia en el uso de las TIC para mejorar el éxito educativo.</p>
 							<p>Por ejemplo, dentro de la propia UNAM existen sistemas que fomentan en mayor o menor medida el aprendizaje, pero se debería cuestionar conjuntamente un nuevo sistema que fomente el aprendizaje.</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/12.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">
 							<p>El peligro al que se hace referencia es una crítica al profesor, al catedrático todopoderoso en el aula.</p>
 							<p>La permanencia del modelo tradicional podría explicarse en la reticencia de los académicos al cambio en la forma de enseñar.</p>
 							<p>Asimismo, se ha improvisado en la adopción de las TIC, no han obedecido a estrategias debidamente planteadas.</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/13.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p>Se plantean dos futuros irreconciliables. Modernizar el sistema tradicional no consiste en incluir el uso de más TIC, sino tener la certeza de que las TIC en verdad mejoran el aprendizaje de los estudiantes.</p>
 							<p>La alternativa es la creación de este nuevo modelo, uno disruptivo. </p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/14.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p>Sin embargo, modelos tales como las clases magistrales son un recurso que no se ha abandonado porque cuando se desarrolla adecuadamente, y ahora con el uso de las TIC, podría ser un gran recurso de enseñanza.</p>
 						</div>
 					</div>
 					<!-- video -->
 					<div class="row">
-						<div class="tarjeta col-12">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
+							<div class="imagen">
 							<p><strong>La manera disruptiva de aprender.</strong></p>
 							<p>Para la educación disruptiva, el modelo discursivo está agotado; para las nuevas generaciones que disponen del mundo en su teléfono celular, el aula puede parecerles carcelarias. De aquí la intención de crear un nuevo modelo. </p>
 						</div>
@@ -271,24 +337,26 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">
 							<div class="imagen">
 								<img src="img/19.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p>Se Deben cuidar los aspectos humanos, no perder el contacto entre las personas.</p>
 							<p>Se debe fomentar la educación colaborativa, social entre profesores y estudiantes.</p>
 						</div>
 					</div>
 					<br>
 					<div class="row">
-						<div class="tarjeta col-7">	
+						<!-- col-xs-12 col-lg-7 en un tamaño menor a md se vuelve de 12 -->
+						<div class="tarjeta col-xs-12 col-md-7">	
 							<div class="imagen">
 								<img src="img/20.jpg" alt="">
 							</div>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p>Esta es la conclusión de los disruptores de la educación.</p>
 							<p><strong>Ante escenarios probables para la eliminación de los exámenes de admisión a las universidades públicas, más allá de posturas políticas, estos nuevos modelos podrían ser una opción para responderle a la sociedad mexicana como debe ser.</strong></p>
 							<p><strong>De aquí la importancia de la discusión de las ideas entre los diferentes modelos para tener escenarios correctamente planeados.</strong></p>
@@ -302,21 +370,21 @@
 						</div>
 					</div>
 					<div class="row d-flex justify-content-between">
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p><strong>Asistente:</strong> Las empresas están trabajando en un concepto denominado “equilibrio tecnológico” que consiste en determinar la proporción tradicional y la digital de sus actividades, cada empresa escoge esta proporción según considere. Se sugiere que la Facultad de Ingeniería definir esta proporción para que cada alumno determine de acuerdo sus capacidades al profesor que enseñe con la misma proporción que le conviene.</p>
 							<p>Por otra parte, la elaboración de vídeos resulta muy afortunada, como lo ha demostrado el éxito de la Khan Academy.</p>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p><strong>Ponente:</strong> hay opiniones para sustituir los exámenes diagnósticos por pruebas sobre estilos de aprendizaje.</p>
 							<p>Asimismo, se debe promover entre los alumnos la consciencia de que son ellos los responsables de su formación y que, en consecuencia, la asuman.</p>
 							<p>Hay ejemplos en la historia de momentos disruptivos, uno de ellos es la imprenta de Gutemberg, que difundió el conocimiento al poner los libros en manos de las personas.</p>
 						</div>
 					</div>
 					<div class="row d-flex justify-content-between">
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p><strong>Asistente:</strong> Desafortunadamente, las políticas educativas se oponen a los cambios en los modelos, tales como el crecimiento de contenidos en los planes de estudio lo cual es contrario a una gran cantidad de políticas educativas que se aplican en otros países. </p>
 						</div>
-						<div class="texto col-5">	
+						<div class="texto col-xs-12 col-md-5">	
 							<p><strong>Ponente:</strong> Y hay otros aspectos más, como el considerar que todos los estudiantes deban asistir a las universidades cuando la educación técnica es tanto o más valiosa que la universitaria. Sin embargo, esto requiere de una política gubernamental adecuada.</p>
 							<p>Sin embargo, son los académicos los que deben discutir y hacer propuestas a las autoridades</p>
 						</div>
@@ -344,10 +412,10 @@
 						</div>
 					</div>
 					<div class="row d-flex justify-content-between">
-						<div class="texto col-5">	
-							<p style="font-size: 11px;">Seminario PI by Víctor Damián Pinilla Morán is licensed under CC BY-NC-SA 4.0</p>
+						<div class="texto col-xs-12 col-md-5">	
+							<p >Seminario PI by Víctor Damián Pinilla Morán is licensed under CC BY-NC-SA 4.0</p>
 						</div>
-						<div class="imagen col-5">
+						<div class="imagen col-xs-12 col-md-5">
 							<img src="img/22.png" alt="">
 						</div>
 					</div>
@@ -357,9 +425,6 @@
 						</div>
 					</div>
 				</div>
-				
-					
-
 			</div>
 		</div>	
 	</div>	

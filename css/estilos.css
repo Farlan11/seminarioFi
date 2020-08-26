@@ -30,8 +30,7 @@ body{
 }
 
 .contenedor{
-			margin-bottom: 20px;
-			
+			margin-bottom: 20px;			
 			color: #000;
 		}
 .contenedor .unam{
@@ -85,6 +84,7 @@ body{
 	color: #1E296D;
 }
 
+/** FOOTER ***/
 .footer h4{
 	margin-top: 80px;
 	font-family: "Open Sans", Arial, Sans-serif;
@@ -151,20 +151,41 @@ body{
 	padding-top: 86px;
 	}
 	.header p{
+		font-size: 8px;
+	}
+	.contenedor{
+			margin-bottom: 0px;			
+			color: #000;
+		}
+	/* MAIN */
+	.main h4{
+		font-size: 20px;
+	}
+	.main .card .card-title{
 		font-size: 10px;
 	}
-	
+
+	.main .card .card-text{
+		font-size: 8px;
+	}
+	.main .card a{
+		font-size: 8px;
+	}
 	/* FOOTER ****/
+	.footer p{
+		margin-bottom: 0px;
+	}
 	.footer h4{
-		font-size: 10px;
+		margin-top: 20px;
+		font-size: 8px;
 	}
 	.footer .correo{
 		font-size: 8px;
 	}
 	.footer p{
-		font-size: 10px;
+		font-size: 8px;
 	}
 	.footer .ubicacion{
-		font-size: 8px;
+		font-size: 6px;
 	}
 }

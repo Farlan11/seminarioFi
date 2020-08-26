@@ -8,6 +8,11 @@ body{
 	font-family: "Open Sans", Arial, Sans-serif;
 	font-size: 16px;
 }
+/********** NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES ****************/
+.fixed-top {
+  max-height: 100vh;
+  overflow: auto;
+}
 /************** HEADER ****************/
 .header img{
 	max-width: 100%;
@@ -53,9 +58,18 @@ body{
 	margin: 0 auto;
 	max-width: 100%;
 }
+
+.main .fuente{
+	font-size: 10px;
+	text-align: center;
+}
 .main hr {
   height: 2px;
   background-color: black;
+}
+
+.main .espaciado{
+	margin-top: 50px;
 }
 /****** BARRA LATERAL*****/
 .aside{
@@ -89,4 +103,109 @@ body{
 }
 .footer .chiste{
 	margin: 20px 0;
+}
+
+/********* MEDIAQUERIES *******/
+@media screen and (max-width:600px)
+{
+	/* NAVBAR */
+	.linea .container a{
+		font-size: 10px;
+	}
+	.linea .container .collapse a{
+	font-size: 10px;
+	padding: 5px 0px;
+	}
+
+	/************** SECTION *************/
+	.section h4{
+		font-size: 20px;
+	}
+	.section p{
+		font-size: 10px;
+	}
+	/************** MAIN *************/
+	.main p
+	{
+		font-size: 10px;
+	}
+	.main ul{
+		padding: 0 40px;
+	}
+	.main li{
+		font-size: 10px;
+	}
+	.main .fuente{
+	font-size: 5px;
+	}
+	.main img{
+		width: 80%;
+	}
+	.footer p{
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width:400px){
+	/************* HEADER **************/
+	.header{
+		margin-top: 50px;
+	}
+	/****** section ********/
+	.section h4{
+		margin-top: 40px;
+		margin-bottom: 20px;
+		font-size: 10px;
+	}
+	.section p{
+		font-size: 8px;
+	}
+
+	/********** MAIN **********/
+	.main .chiste{
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+	.main p{
+		font-size: 8px;
+	}
+	.main img{
+		width: 60%;
+	}
+	.main li{
+		font-size: 8px;
+	}
+	.main .espaciado{
+	margin-top: 20px;
+	}
+
+	/*********** FOOTER ************/
+	.footer p{
+		font-size: 8px;
+	}
+	.footer .chiste{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:300px)
+{
+	.main{
+		margin-top: 10px;
+	}
+	.main .fuente{
+		text-align: left;
+		overflow: hidden;
+	}
+	.main img{
+		width: 100%;
+	}
+
+	/************** FOOTER ***********/
+	.footer img{
+		width: 100%;
+	}
+	.footer .chiste{
+		margin: 10px 0;
+	}
 }

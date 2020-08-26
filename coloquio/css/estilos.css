@@ -8,17 +8,22 @@ body{
 	font-family: "Open Sans", Arial, Sans-serif;
 	font-size: 16px;
 }
+/********** NAVBAR ADAPTABLE A DISPOSITIVOS MOVILES ****************/
+.fixed-top {
+  max-height: 100vh;
+  overflow: auto;
+}
 /****** HEADER ********/
-.div{
-	color: #1E296D;
-	font-family: "Open Sans", Arial, Sans-serif;
-	font-weight: 300;
-	margin-top: 50px;
+.header{
+	margin-top: 60px;
+}
+.header img{
+	max-width: 100%;
 }
 
-.div img{
-	/*margin-top: 50px;*/
-	width: 100%;
+/******** SECTION 1*************/
+.section1{
+	margin-top: 40px;
 }
 
 /****** MAIN *****/
@@ -33,9 +38,9 @@ body{
 }
 
 /******* SECTION /*****/
-.section .pdf{
+/*.section .pdf{
 	width: 500px;
-}
+}*/
 
 
 .section .titulo,
@@ -66,4 +71,94 @@ body{
 }
 .aside a:hover{
 	color: red;
+}
+/************** FOOTER ************/
+
+.footer p{
+	margin-top: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 14px;
+}
+
+
+/********* MEDIAQUERIES *******/
+@media screen and (max-width:600px)
+{
+	/* NAVBAR */
+	.linea .container a{
+		font-size: 10px;
+	}
+	.linea .container .collapse a{
+	font-size: 10px;
+	padding: 5px 0px;
+	}
+	/********** SECTION 1 *********/
+	.section1 p{
+		font-size: 10px;
+	}
+	
+	/*** MAIN ******/
+	.main .lista{
+		font-size: 10px;
+	}
+	/******* SECTION /*****/
+	.section .titulo,
+	.section p{
+		font-size: 12px;
+	}
+	.section .pdf{
+		max-width: 100%;
+	}
+	.section .fotos{
+	margin: 50px 0px;
+	}
+
+	/***** FOOTER ********/
+	.footer p{
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width:400px)
+{
+	/*** MAIN ******/
+	.main .lista{
+		font-size: 8px;
+	}
+	/******* SECTION /*****/
+	.section .titulo,
+	.section p{
+		font-size: 8px;
+	}
+	.section .titulo,
+	.section .fotos{
+		margin: 10px;
+	}
+	/***** FOOTER ********/
+	.footer p{
+		font-size: 8px;
+	}
+}
+@media screen and (max-width:400px)
+{
+	/******** SECTION 1*************/
+	.section1{
+		margin-top: 10px;
+	}
+	.section1 p{
+		font-size: 8px;
+	}
+
+	/********** MAIN **********/
+	.main .fotos img{
+	margin-top: 20px;
+	}
+	.main .lista{
+	margin-top: 20px;
+	}
+	/***** FOOTER ********/
+	.footer p{
+		font-size: 6px;
+	}
 }
